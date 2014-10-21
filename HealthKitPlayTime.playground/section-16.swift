@@ -9,6 +9,7 @@ var timsHeightDM: Double?
 if timsHeightCM.isCompatibleWithUnit(dm) {
     timsHeightDM = timsHeightCM.doubleValueForUnit(dm)
 }
+
 if let timsHeightDM = timsHeightDM {
     println("Tim's height in deci-meters is \(timsHeightDM)")
 } else {
