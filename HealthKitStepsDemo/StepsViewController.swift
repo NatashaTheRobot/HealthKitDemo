@@ -28,7 +28,7 @@ class StepsViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         requestHealthKitAuthorization()
     }
 
@@ -74,6 +74,7 @@ private extension StepsViewController {
                 let numberOfSteps = Int(sum.doubleValueForUnit(self.healthKitManager.stepsUnit))
                 headerView.textLabel.text = "\(numberOfSteps) total"
                 self.tableView.tableHeaderView = headerView
+                self.tableView.reloadData()
             }
             
         }
