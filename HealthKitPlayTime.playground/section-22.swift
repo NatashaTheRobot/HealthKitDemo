@@ -24,9 +24,6 @@ let lengthFormatter = NSLengthFormatter()
 lengthFormatter.forPersonHeightUse = true
 lengthFormatter.unitStyle = .Short
 
-// Experiment: Uncomment the below line to see what Tim's localized height would be in Myanmar. Try other localieIdentifiers: https://gist.github.com/jacobbubu/1836273
-//lengthFormatter.numberFormatter.locale = NSLocale(localeIdentifier: "my_MM")
-
 
 let timsHeightMeters = timsHeightCM.doubleValueForUnit(HKUnit.meterUnit())
 let timsLocalizedHeight = lengthFormatter.stringFromMeters(timsHeightMeters)

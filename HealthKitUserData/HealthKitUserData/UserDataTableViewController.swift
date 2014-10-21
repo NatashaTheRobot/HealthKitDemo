@@ -43,7 +43,7 @@ class UserDataTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        HealthKitManager.sharedInstance.requestHealthKitAuthorization(nil, dataTypesToRead: dataTypesToRead)
+        HealthKitManager.sharedInstance.requestHealthKitAuthorization(dataTypesToWrite: nil, dataTypesToRead: dataTypesToRead)
     }
 
 

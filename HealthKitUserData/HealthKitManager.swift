@@ -82,7 +82,7 @@ class HealthKitManager {
         return nil
     }
     
-    func requestHealthKitAuthorization(dataTypesToWrite: NSSet?, dataTypesToRead: NSSet?) {
+    func requestHealthKitAuthorization(#dataTypesToWrite: NSSet?, dataTypesToRead: NSSet?) {
             healthStore?.requestAuthorizationToShareTypes(dataTypesToWrite, readTypes: dataTypesToRead, completion: { (success, error) -> Void in
                 if success {
                     println("success")
