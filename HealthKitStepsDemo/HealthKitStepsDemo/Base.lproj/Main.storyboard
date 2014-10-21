@@ -118,6 +118,9 @@
                                     <outlet property="delegate" destination="Pc4-Wi-Ery" id="F5w-cj-HQr"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="6Nm-3F-Tol">
+                                <rect key="frame" x="61" y="79" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -134,6 +137,7 @@
                     </view>
                     <toolbarItems/>
                     <connections>
+                        <outlet property="activityIndicator" destination="6Nm-3F-Tol" id="f1j-tI-V00"/>
                         <outlet property="tableView" destination="e1Y-YA-DiM" id="Qeu-wz-luD"/>
                     </connections>
                 </viewController>
