@@ -1,2 +1,2 @@
-wnt2014
+HealthKit Demo Projects
 =======
